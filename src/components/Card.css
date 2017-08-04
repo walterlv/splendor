@@ -1,0 +1,67 @@
+.Card {
+    position: relative;
+    display: block;
+    background-color: #222;
+    width: 180px;
+    height: 240px;
+    margin: 16px;
+    color: white;
+}
+
+.CardTagContainer {
+    display: -webkit-flex;
+    display: flex;
+}
+
+.CardPriceContainer {
+    display: block;
+}
+
+.CardTag {
+    -webkit-flex: 1;
+    flex: 1;
+    height: 60px;
+    margin: 0;
+}
+
+.CardValue {
+    -webkit-flex: 2;
+    flex: 2;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+.CardPrice {
+    width: 120px;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.Red {
+    color: white;
+    background: red;
+}
+
+.Green {
+    color: white;
+    background: green;
+}
+
+.White {
+    color: black;
+    background: white;
+}
+
+.Black {
+    color: white;
+    background: black;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
