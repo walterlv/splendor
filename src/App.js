@@ -11,8 +11,6 @@ class App extends Component {
           <h2>Splendor</h2>
         </div>
         <Playground/>
-        <Playground/>
-        <Playground/>
       </div>
     );
   }

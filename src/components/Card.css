@@ -8,7 +8,7 @@
     color: white;
 }
 
-.CardTagContainer {
+.CardTokenContainer {
     display: -webkit-flex;
     display: flex;
 }
@@ -17,14 +17,14 @@
     display: block;
 }
 
-.CardTag {
+.CardToken {
     -webkit-flex: 1;
     flex: 1;
     height: 60px;
     margin: 0;
 }
 
-.CardValue {
+.CardPoints {
     -webkit-flex: 2;
     flex: 2;
     -webkit-align-items: center;
@@ -50,6 +50,11 @@
     background: green;
 }
 
+.Blue {
+    color: white;
+    background: Blue;
+}
+
 .White {
     color: black;
     background: white;
@@ -58,10 +63,4 @@
 .Black {
     color: white;
     background: black;
-}
-
-* {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
 }
