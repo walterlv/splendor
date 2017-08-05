@@ -36,11 +36,21 @@ export default class Card extends Component {
                     </p>
                 </div>
                 <div className="CardPriceContainer">
+                    { this.state.price.w > 0 &&
                     <p className="CardPrice White">白宝石：{this.state.price.w}</p>
+                    }
+                    { this.state.price.b > 0 &&
                     <p className="CardPrice Blue">蓝宝石：{this.state.price.b}</p>
+                    }
+                    { this.state.price.g > 0 &&
                     <p className="CardPrice Green">绿宝石：{this.state.price.g}</p>
+                    }
+                    { this.state.price.r > 0 &&
                     <p className="CardPrice Red">红宝石：{this.state.price.r}</p>
+                    }
+                    { this.state.price.k > 0 &&
                     <p className="CardPrice Black">黑宝石：{this.state.price.k}</p>
+                    }
                 </div>
             </div>
         );

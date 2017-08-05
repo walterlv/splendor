@@ -1,16 +1,18 @@
 import React, { Component } from 'react';
 import './Playground.css';
 import Card from './Card';
-import model from '../data/model';
+import SplendorGame from '../game/SplendorGame';
 
 export default class Playground extends Component {
     constructor(props) {
         super(props);
+        const sg = new SplendorGame();
         this.state = {
+            game: sg,
             opened: {
-                deck0: model.decks.deck0,
-                deck1: model.decks.deck1,
-                deck2: model.decks.deck2,
+                deck0: sg.flop(0, 4),
+                deck1: sg.flop(1, 4),
+                deck2: sg.flop(2, 4),
             },
         };
     }

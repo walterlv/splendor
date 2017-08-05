@@ -1,5 +1,5 @@
-function ramdomNumber(max) {
+function randomNumber(max) {
     return Math.floor(Math.random() * max);
 }
 
-export default { ramdomNumber };
+export default { randomNumber };
