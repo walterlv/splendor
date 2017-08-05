@@ -4,13 +4,13 @@ import Card from './Card.js'
 import model from '../data/model.js'
 
 export default class Playground extends Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.state = {
             opened: {
                 deck0: model.decks.deck0,
-                deck1: model.decks.deck0,
-                deck2: model.decks.deck0
+                deck1: model.decks.deck1,
+                deck2: model.decks.deck2
             }
         }
     }
@@ -43,19 +43,7 @@ export default class Playground extends Component {
         );
     }
 
-    initializePlaygroundCards(model) {
-        this.state.decks = model.decks.deck0;
-    }
-
-    readTextFile(file, callback) {
-        var rawFile = new XMLHttpRequest();
-        rawFile.overrideMimeType("application/json");
-        rawFile.open("GET", file, true);
-        rawFile.onreadystatechange = function() {
-            if (rawFile.readyState === 4 && rawFile.status == "200") {
-                callback(rawFile.responseText);
-            }
-        }
-        rawFile.send(null);
+    getRamdomNumber(max) {
+        return Math.floor(Math.random()*max);
     }
 }

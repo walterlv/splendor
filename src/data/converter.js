@@ -1,4 +1,4 @@
-exports.cardTagToKey = function(tag) {
+function cardTagToKey(tag) {
     switch (tag) {
         case 'w':
             return "White";
@@ -13,7 +13,7 @@ exports.cardTagToKey = function(tag) {
     }
 }
 
-exports.cardTagToName = function(tag) {
+function cardTagToName(tag) {
     switch (tag) {
         case 'w':
             return "白";
@@ -27,3 +27,5 @@ exports.cardTagToName = function(tag) {
             return "黑";
     }
 }
+
+export { cardTagToKey, cardTagToName }

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './Card.css'
-import Converters from '../data/converter.js';
+import { cardTagToKey, cardTagToName } from '../data/converter.js';
 
 export default class Card extends Component {
     constructor(props) {
@@ -31,14 +31,15 @@ export default class Card extends Component {
             <div className="Card">
                 <div className="CardTokenContainer">
                     <p className="CardPoints">点数：{ this.state.points }</p>
-                    <p className={ "CardToken " + Converters.cardTagToKey(this.state.token) }>
-                        { Converters.cardTagToName(this.state.token) + "宝石" }
+                    <p className={ "CardToken " + cardTagToKey(this.state.token) }>
+                        { cardTagToName(this.state.token) + "宝石" }
                     </p>
                 </div>
                 <div className="CardPriceContainer">
                     <p className="CardPrice White">白宝石：{ this.state.price.w }</p>
-                    <p className="CardPrice Red">红宝石：{ this.state.price.r }</p>
+                    <p className="CardPrice Blue">蓝宝石：{ this.state.price.b }</p>
                     <p className="CardPrice Green">绿宝石：{ this.state.price.g }</p>
+                    <p className="CardPrice Red">红宝石：{ this.state.price.r }</p>
                     <p className="CardPrice Black">黑宝石：{ this.state.price.k }</p>
                 </div>
             </div>
