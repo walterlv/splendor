@@ -6,48 +6,39 @@ export default class Card extends Component {
     constructor(props) {
         super(props);
         if (this.props.data !== undefined) {
-            this.state = {
-                points: this.props.data.points,
-                token: this.props.data.token,
-                price: this.props.data.price,
-            };
+            this.points = this.props.data.points;
+            this.token = this.props.data.token;
+            this.w = this.props.data.price.w;
+            this.b = this.props.data.price.b;
+            this.g = this.props.data.price.g;
+            this.r = this.props.data.price.r;
+            this.k = this.props.data.price.k;
         } else {
-            this.state = {
-                points: 0,
-                token: 'w',
-                price: {
-                    w: 0,
-                    r: 0,
-                    g: 0,
-                    b: 0,
-                    k: 0,
-                },
-            };
+            this.points = 0;
+            this.token = 'w';
+            this.w = 0;
+            this.b = 0;
+            this.g = 0;
+            this.r = 0;
+            this.k = 0;
         }
     }
 
     render() {
-        const points = this.state.points;
-        const token = this.state.token;
-        const w = this.state.price.w;
-        const b = this.state.price.b;
-        const g = this.state.price.g;
-        const r = this.state.price.r;
-        const k = this.state.price.k;
         return (
             <div className="Card">
                 <div className="CardTokenContainer">
-                    <p className="CardPoints">点数：{points}</p>
-                    <p className={`CardToken ${cardTagToKey(token)}`}>
-                        {`${cardTagToName(token)}宝石`}
+                    <p className="CardPoints">点数：{this.points}</p>
+                    <p className={`CardToken ${cardTagToKey(this.token)}`}>
+                        {`${cardTagToName(this.token)}宝石`}
                     </p>
                 </div>
                 <div className="CardPriceContainer">
-                    { w > 0 && <p className="CardPrice White">白宝石：{w}</p> }
-                    { b > 0 && <p className="CardPrice Blue">蓝宝石：{b}</p> }
-                    { g > 0 && <p className="CardPrice Green">绿宝石：{g}</p> }
-                    { r > 0 && <p className="CardPrice Red">红宝石：{r}</p> }
-                    { k > 0 && <p className="CardPrice Black">黑宝石：{k}</p> }
+                    { this.w > 0 && <p className="CardPrice White">白宝石：{this.w}</p> }
+                    { this.b > 0 && <p className="CardPrice Blue">蓝宝石：{this.b}</p> }
+                    { this.g > 0 && <p className="CardPrice Green">绿宝石：{this.g}</p> }
+                    { this.r > 0 && <p className="CardPrice Red">红宝石：{this.r}</p> }
+                    { this.k > 0 && <p className="CardPrice Black">黑宝石：{this.k}</p> }
                 </div>
             </div>
         );
