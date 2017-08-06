@@ -11,6 +11,7 @@
 .CardTokenContainer {
     display: -webkit-flex;
     display: flex;
+    background-color: rgba(255, 255, 255, 33%)
 }
 
 .CardPriceContainer {
@@ -36,34 +37,41 @@
 }
 
 .CardPrice {
-    text-align: left;
-    width: 120px;
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    border: 1px solid;
     bottom: 0;
-    margin: 0;
+    margin: 4px;
     padding: 0;
 }
 
 .Red {
+    border-color: white;
     color: white;
     background: red;
 }
 
 .Green {
+    border-color: white;
     color: white;
     background: green;
 }
 
 .Blue {
+    border-color: white;
     color: white;
     background: Blue;
 }
 
 .White {
+    border-color: black;
     color: black;
     background: white;
 }
 
 .Black {
+    border-color: white;
     color: white;
     background: black;
 }

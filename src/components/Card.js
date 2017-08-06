@@ -34,11 +34,11 @@ export default class Card extends Component {
                     </p>
                 </div>
                 <div className="CardPriceContainer">
-                    { this.w > 0 && <p className="CardPrice White">白宝石：{this.w}</p> }
-                    { this.b > 0 && <p className="CardPrice Blue">蓝宝石：{this.b}</p> }
-                    { this.g > 0 && <p className="CardPrice Green">绿宝石：{this.g}</p> }
-                    { this.r > 0 && <p className="CardPrice Red">红宝石：{this.r}</p> }
-                    { this.k > 0 && <p className="CardPrice Black">黑宝石：{this.k}</p> }
+                    { this.w > 0 && <p className="CardPrice White">{this.w}</p> }
+                    { this.b > 0 && <p className="CardPrice Blue">{this.b}</p> }
+                    { this.g > 0 && <p className="CardPrice Green">{this.g}</p> }
+                    { this.r > 0 && <p className="CardPrice Red">{this.r}</p> }
+                    { this.k > 0 && <p className="CardPrice Black">{this.k}</p> }
                 </div>
             </div>
         );
