@@ -1,10 +1,12 @@
-import React, { Component } from 'react';
+import React, { Component, Image } from 'react';
 import './Card.css';
-import { cardTagToKey, cardTagToName } from '../data/converter';
+import { cardTagToStoneImage } from '../resources/resource';
+import { cardTagToName } from '../data/converter';
 
 export default class Card extends Component {
     constructor(props) {
         super(props);
+
         if (this.props.data !== undefined) {
             this.points = this.props.data.points;
             this.token = this.props.data.token;
@@ -22,6 +24,7 @@ export default class Card extends Component {
             this.r = 0;
             this.k = 0;
         }
+        console.log(cardTagToStoneImage(this.token));
     }
 
     render() {
@@ -29,9 +32,7 @@ export default class Card extends Component {
             <div className="Card">
                 <div className="CardTokenContainer">
                     <p className="CardPoints">点数：{this.points}</p>
-                    <p className={`CardToken ${cardTagToKey(this.token)}`}>
-                        {`${cardTagToName(this.token)}宝石`}
-                    </p>
+                       {/* <Image source={cardTagToStoneImage(this.token)} /> */}
                 </div>
                 <div className="CardPriceContainer">
                     { this.w > 0 && <p className="CardPrice White">{this.w}</p> }
