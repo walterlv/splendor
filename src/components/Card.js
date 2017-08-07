@@ -1,7 +1,5 @@
 import React, { Component, Image } from 'react';
 import './Card.css';
-import { cardTagToStoneImage } from '../resources/resource';
-import { cardTagToName } from '../data/converter';
 
 export default class Card extends Component {
     constructor(props) {
@@ -24,15 +22,18 @@ export default class Card extends Component {
             this.r = 0;
             this.k = 0;
         }
-        console.log(cardTagToStoneImage(this.token));
     }
 
     render() {
         return (
             <div className="Card">
-                <div className="CardTokenContainer">
-                    <p className="CardPoints">点数：{this.points}</p>
-                       {/* <Image source={cardTagToStoneImage(this.token)} /> */}
+                <div className="CardPointsTokenContainer">
+                    <div className="CardPointsContainer">
+                        <p className="CardPoints">{this.points}</p>
+                    </div>
+                    <div className="CardTokenContainer">
+                        <img className="CardToken" src={`/resources/${this.token}.png`} />
+                    </div>
                 </div>
                 <div className="CardPriceContainer">
                     { this.w > 0 && <p className="CardPrice White">{this.w}</p> }

@@ -1,17 +1,31 @@
 .Card {
     position: relative;
     display: block;
-    background-color: #333;
     width: 180px;
     height: 240px;
-    margin: 16px;
+    margin: 8px;
     color: white;
+    border-radius: 4px;
+    background-image: url(/resources/deck-1-1.png);
+    background-position: center;
+}
+
+.CardPointsTokenContainer {
+    display: -webkit-flex;
+    display: flex;
+    background-color: rgba(255, 255, 255, 33%)
 }
 
 .CardTokenContainer {
     display: -webkit-flex;
     display: flex;
     background-color: rgba(255, 255, 255, 33%)
+}
+
+.CardPointsContainer {
+    -webkit-flex: 2;
+    flex: 2;
+    position: relative;
 }
 
 .CardPriceContainer {
@@ -23,17 +37,16 @@
 .CardToken {
     -webkit-flex: 1;
     flex: 1;
-    height: 60px;
-    margin: 0;
+    height: 44px;
+    margin: 8px;
 }
 
 .CardPoints {
-    -webkit-flex: 2;
-    flex: 2;
-    -webkit-align-items: center;
-    align-items: center;
-    -webkit-justify-content: center;
-    justify-content: center;
+    margin: 0;
+    top: auto;
+    bottom: auto;
+    position: absolute;
+    font-size: 200%;
 }
 
 .CardPrice {
@@ -44,6 +57,7 @@
     bottom: 0;
     margin: 4px;
     padding: 0;
+    font-size: 150%;
 }
 
 .Red {
