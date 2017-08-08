@@ -18,26 +18,37 @@ export default class Playground extends Component {
     }
 
     render() {
+
+        function exchangeTheCard(e) {
+            console.log(e);
+        }
+
         return (
             <div className="Playground">
                 <div className="GroundDeck">
                     {
-                        this.state.opened.deck0.map(card => (
-                            <Card data={card} />
+                        this.state.opened.deck0.map((card, index) => (
+                            <div onClick={exchangeTheCard} key={index.toString()}>
+                                <Card data={card} />
+                            </div>
                         ))
                     }
                 </div>
                 <div className="GroundDeck">
                     {
-                        this.state.opened.deck1.map(card => (
-                            <Card data={card} />
+                        this.state.opened.deck1.map((card, index) => (
+                            <div onClick={exchangeTheCard} key={index.toString()}>
+                                <Card data={card} />
+                            </div>
                         ))
                     }
                 </div>
                 <div className="GroundDeck">
                     {
-                        this.state.opened.deck2.map(card => (
-                            <Card data={card} />
+                        this.state.opened.deck2.map((card, index) => (
+                            <div onClick={exchangeTheCard} key={index.toString()}>
+                                <Card data={card} />
+                            </div>
                         ))
                     }
                 </div>
