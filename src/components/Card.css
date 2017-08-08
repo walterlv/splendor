@@ -19,7 +19,8 @@
 .CardTokenContainer {
     display: -webkit-flex;
     display: flex;
-    background-color: rgba(255, 255, 255, 33%)
+    background-color: rgba(255, 255, 255, 33%);
+    margin-left: 108px;
 }
 
 .CardPointsContainer {
@@ -43,6 +44,7 @@
 
 .CardPoints {
     margin: 0;
+    margin-left: 8px;
     top: auto;
     bottom: auto;
     position: absolute;

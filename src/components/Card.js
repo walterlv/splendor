@@ -28,11 +28,13 @@ export default class Card extends Component {
         return (
             <div className="Card">
                 <div className="CardPointsTokenContainer">
-                    <div className="CardPointsContainer">
-                        <p className="CardPoints">{this.points}</p>
-                    </div>
+                    { this.points > 0 &&
+                        <div className="CardPointsContainer">
+                            <p className="CardPoints">{this.points}</p>
+                        </div>
+                    }
                     <div className="CardTokenContainer">
-                        <img className="CardToken" src={`/resources/${this.token}.png`} />
+                        <img className="CardToken" src={`/resources/${this.token}.png`} alt={this.token} />
                     </div>
                 </div>
                 <div className="CardPriceContainer">
