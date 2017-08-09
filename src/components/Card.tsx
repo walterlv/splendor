@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
+import * as React from 'react';
 import './Card.css';
 import { tokenToLocalizedName } from '../data/converter';
 
-export default class Card extends Component {
+export default class Card extends React.Component {
     constructor(props) {
         super(props);
 

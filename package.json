@@ -3,22 +3,19 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@types/jest": "^20.0.6",
+    "@types/node": "^8.0.20",
+    "@types/react": "^16.0.2",
+    "@types/react-dom": "^15.5.2",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
-    "react-image-file": "^0.1.0",
-    "react-scripts": "1.0.10",
-    "shuffle-array": "^1.0.1"
+    "react-scripts-ts": "2.5.0"
   },
+  "devDependencies": {},
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
-  },
-  "devDependencies": {
-    "eslint-config-airbnb": "^15.1.0",
-    "eslint-plugin-import": "^2.7.0",
-    "eslint-plugin-jsx-a11y": "^5.1.1",
-    "eslint-plugin-react": "^7.1.0"
+    "start": "react-scripts-ts start",
+    "build": "react-scripts-ts build",
+    "test": "react-scripts-ts test --env=jsdom",
+    "eject": "react-scripts-ts eject"
   }
 }

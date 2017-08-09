@@ -1,18 +1,16 @@
-// import { shuffle } from 'shuffle-array';
-import Model from '../data/model';
-// import { randomNumber } from '../data/math';
+import { GameData } from '../data/data';
 
 const shuffle = require('shuffle-array');
 
 export default class SplendorGame {
     constructor() {
-        const model = JSON.parse(JSON.stringify(Model));
+        const model = new GameData().get();
         this.decks = [
             shuffle(model.decks.level1),
             shuffle(model.decks.level2),
             shuffle(model.decks.level3),
         ];
-        this.artists = Model.decks.artists;
+        this.tiles = Model.decks.artists;
     }
 
     flop(deck, count = 1) {
