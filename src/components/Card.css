@@ -10,13 +10,13 @@
     background-position: center;
 }
 
-.CardPointsTokenContainer {
+.CardPointsBonusContainer {
     display: -webkit-flex;
     display: flex;
     background-color: rgba(255, 255, 255, 33%)
 }
 
-.CardTokenContainer {
+.CardBonusContainer {
     display: -webkit-flex;
     display: flex;
     background-color: rgba(255, 255, 255, 33%);
@@ -35,7 +35,7 @@
     bottom: 0;
 }
 
-.CardToken {
+.CardBonus {
     -webkit-flex: 1;
     flex: 1;
     height: 44px;
@@ -62,31 +62,31 @@
     font-size: 150%;
 }
 
-.Red {
-    border-color: white;
-    color: white;
-    background: red;
-}
-
-.Green {
-    border-color: white;
-    color: white;
-    background: green;
-}
-
-.Blue {
-    border-color: white;
-    color: white;
-    background: Blue;
-}
-
-.White {
+.Diamond {
     border-color: black;
     color: black;
     background: white;
 }
 
-.Black {
+.Sapphire {
+    border-color: white;
+    color: white;
+    background: #082567;
+}
+
+.Emerald {
+    border-color: white;
+    color: white;
+    background: #50C878;
+}
+
+.Ruby {
+    border-color: white;
+    color: white;
+    background: #CC0080;
+}
+
+.Onyx {
     border-color: white;
     color: white;
     background: black;

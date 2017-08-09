@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import Playground from './components/Playground';
+import Playground from './components/Desktop';
 
 class App extends Component {
     render() {

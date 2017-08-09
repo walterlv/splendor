@@ -1,35 +1,39 @@
-function cardTagToKey(tag) {
+function tokenToName(tag) {
     switch (tag) {
     case 'w':
-        return 'White';
-    case 'r':
-        return 'Red';
-    case 'g':
-        return 'Green';
+        return 'Diamond';
     case 'b':
-        return 'Blue';
+        return 'Sapphire';
+    case 'g':
+        return 'Emerald';
+    case 'r':
+        return 'Ruby';
     case 'k':
-        return 'Black';
+        return 'Onyx';
+    case 'y':
+        return 'Gold';
     default:
         throw tag;
     }
 }
 
-function cardTagToName(tag) {
+function tokenToLocalizedName(tag) {
     switch (tag) {
     case 'w':
-        return '白';
-    case 'r':
-        return '红';
-    case 'g':
-        return '绿';
+        return '钻石';
     case 'b':
-        return '蓝';
+        return '蓝宝石';
+    case 'g':
+        return '翡翠';
+    case 'r':
+        return '红宝石';
     case 'k':
-        return '黑';
+        return '玛瑙';
+    case 'y':
+        return '黄金';
     default:
         throw tag;
     }
 }
 
-export { cardTagToKey, cardTagToName };
+export { tokenToName, tokenToLocalizedName };

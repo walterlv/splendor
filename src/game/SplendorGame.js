@@ -8,9 +8,9 @@ export default class SplendorGame {
     constructor() {
         const model = JSON.parse(JSON.stringify(Model));
         this.decks = [
-            shuffle(model.decks.deck0),
-            shuffle(model.decks.deck1),
-            shuffle(model.decks.deck2),
+            shuffle(model.decks.level1),
+            shuffle(model.decks.level2),
+            shuffle(model.decks.level3),
         ];
         this.artists = Model.decks.artists;
     }

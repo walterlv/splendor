@@ -1,9 +1,9 @@
 module.exports =
 {
     decks: {
-        deck0: [
+        level1: [
             {
-                token: 'k',
+                bonus: 'k',
                 points: 0,
                 price: {
                     w: 1,
@@ -13,7 +13,7 @@ module.exports =
                 },
             },
             {
-                token: 'g',
+                bonus: 'g',
                 points: 0,
                 price: {
                     w: 1,
@@ -23,14 +23,14 @@ module.exports =
                 },
             },
             {
-                token: 'g',
+                bonus: 'g',
                 points: 0,
                 price: {
                     r: 3,
                 },
             },
             {
-                token: 'g',
+                bonus: 'g',
                 points: 0,
                 price: {
                     b: 1,
@@ -39,7 +39,7 @@ module.exports =
                 },
             },
             {
-                token: 'k',
+                bonus: 'k',
                 points: 0,
                 price: {
                     g: 2,
@@ -47,7 +47,7 @@ module.exports =
                 },
             },
             {
-                token: 'k',
+                bonus: 'k',
                 points: 0,
                 price: {
                     w: 2,
@@ -56,7 +56,7 @@ module.exports =
                 },
             },
             {
-                token: 'b',
+                bonus: 'b',
                 points: 0,
                 price: {
                     w: 1,
@@ -66,7 +66,7 @@ module.exports =
                 },
             },
             {
-                token: 'r',
+                bonus: 'r',
                 points: 0,
                 price: {
                     b: 2,
@@ -74,7 +74,7 @@ module.exports =
                 },
             },
             {
-                token: 'w',
+                bonus: 'w',
                 points: 0,
                 price: {
                     b: 2,
@@ -82,7 +82,7 @@ module.exports =
                 },
             },
             {
-                token: 'w',
+                bonus: 'w',
                 points: 0,
                 price: {
                     b: 1,
@@ -92,21 +92,21 @@ module.exports =
                 },
             },
             {
-                token: 'g',
+                bonus: 'g',
                 points: 1,
                 price: {
                     k: 4,
                 },
             },
             {
-                token: 'r',
+                bonus: 'r',
                 points: 0,
                 price: {
                     w: 3,
                 },
             },
             {
-                token: 'r',
+                bonus: 'r',
                 points: 0,
                 price: {
                     w: 2,
@@ -116,7 +116,7 @@ module.exports =
                 },
             },
             {
-                token: 'g',
+                bonus: 'g',
                 points: 0,
                 price: {
                     b: 2,
@@ -124,7 +124,7 @@ module.exports =
                 },
             },
             {
-                token: 'b',
+                bonus: 'b',
                 points: 0,
                 price: {
                     g: 2,
@@ -132,7 +132,7 @@ module.exports =
                 },
             },
             {
-                token: 'b',
+                bonus: 'b',
                 points: 0,
                 price: {
                     w: 1,
@@ -141,7 +141,7 @@ module.exports =
                 },
             },
             {
-                token: 'k',
+                bonus: 'k',
                 points: 0,
                 price: {
                     w: 1,
@@ -151,7 +151,7 @@ module.exports =
                 },
             },
             {
-                token: 'k',
+                bonus: 'k',
                 points: 0,
                 price: {
                     g: 1,
@@ -160,14 +160,14 @@ module.exports =
                 },
             },
             {
-                token: 'k',
+                bonus: 'k',
                 points: 1,
                 price: {
                     b: 4,
                 },
             },
             {
-                token: 'g',
+                bonus: 'g',
                 points: 0,
                 price: {
                     w: 1,
@@ -176,14 +176,14 @@ module.exports =
                 },
             },
             {
-                token: 'w',
+                bonus: 'w',
                 points: 1,
                 price: {
                     g: 4,
                 },
             },
             {
-                token: 'w',
+                bonus: 'w',
                 points: 0,
                 price: {
                     w: 3,
@@ -192,7 +192,7 @@ module.exports =
                 },
             },
             {
-                token: 'b',
+                bonus: 'b',
                 points: 0,
                 price: {
                     w: 1,
@@ -202,7 +202,7 @@ module.exports =
                 },
             },
             {
-                token: 'b',
+                bonus: 'b',
                 points: 0,
                 price: {
                     w: 1,
@@ -210,14 +210,14 @@ module.exports =
                 },
             },
             {
-                token: 'b',
+                bonus: 'b',
                 points: 0,
                 price: {
                     k: 3,
                 },
             },
             {
-                token: 'r',
+                bonus: 'r',
                 points: 0,
                 price: {
                     w: 2,
@@ -225,7 +225,7 @@ module.exports =
                 },
             },
             {
-                token: 'w',
+                bonus: 'w',
                 points: 0,
                 price: {
                     b: 2,
@@ -234,7 +234,7 @@ module.exports =
                 },
             },
             {
-                token: 'g',
+                bonus: 'g',
                 points: 0,
                 price: {
                     w: 2,
@@ -242,7 +242,7 @@ module.exports =
                 },
             },
             {
-                token: 'g',
+                bonus: 'g',
                 points: 0,
                 price: {
                     w: 1,
@@ -252,7 +252,7 @@ module.exports =
                 },
             },
             {
-                token: 'k',
+                bonus: 'k',
                 points: 0,
                 price: {
                     w: 2,
@@ -260,14 +260,14 @@ module.exports =
                 },
             },
             {
-                token: 'k',
+                bonus: 'k',
                 points: 0,
                 price: {
                     g: 3,
                 },
             },
             {
-                token: 'w',
+                bonus: 'w',
                 points: 0,
                 price: {
                     b: 1,
@@ -277,7 +277,7 @@ module.exports =
                 },
             },
             {
-                token: 'w',
+                bonus: 'w',
                 points: 0,
                 price: {
                     r: 2,
@@ -285,7 +285,7 @@ module.exports =
                 },
             },
             {
-                token: 'r',
+                bonus: 'r',
                 points: 0,
                 price: {
                     w: 1,
@@ -294,7 +294,7 @@ module.exports =
                 },
             },
             {
-                token: 'r',
+                bonus: 'r',
                 points: 0,
                 price: {
                     w: 2,
@@ -303,7 +303,7 @@ module.exports =
                 },
             },
             {
-                token: 'r',
+                bonus: 'r',
                 points: 0,
                 price: {
                     w: 1,
@@ -313,21 +313,21 @@ module.exports =
                 },
             },
             {
-                token: 'r',
+                bonus: 'r',
                 points: 1,
                 price: {
                     w: 4,
                 },
             },
             {
-                token: 'w',
+                bonus: 'w',
                 points: 0,
                 price: {
                     b: 3,
                 },
             },
             {
-                token: 'b',
+                bonus: 'b',
                 points: 0,
                 price: {
                     b: 1,
@@ -336,16 +336,16 @@ module.exports =
                 },
             },
             {
-                token: 'b',
+                bonus: 'b',
                 points: 1,
                 price: {
                     r: 4,
                 },
             },
         ],
-        deck1: [
+        level2: [
             {
-                token: 'w',
+                bonus: 'w',
                 points: 1,
                 price: {
                     w: 2,
@@ -354,7 +354,7 @@ module.exports =
                 },
             },
             {
-                token: 'g',
+                bonus: 'g',
                 points: 1,
                 price: {
                     w: 2,
@@ -363,7 +363,7 @@ module.exports =
                 },
             },
             {
-                token: 'k',
+                bonus: 'k',
                 points: 2,
                 price: {
                     g: 5,
@@ -371,7 +371,7 @@ module.exports =
                 },
             },
             {
-                token: 'r',
+                bonus: 'r',
                 points: 1,
                 price: {
                     b: 3,
@@ -380,7 +380,7 @@ module.exports =
                 },
             },
             {
-                token: 'g',
+                bonus: 'g',
                 points: 2,
                 price: {
                     w: 4,
@@ -389,7 +389,7 @@ module.exports =
                 },
             },
             {
-                token: 'b',
+                bonus: 'b',
                 points: 2,
                 price: {
                     w: 5,
@@ -397,7 +397,7 @@ module.exports =
                 },
             },
             {
-                token: 'g',
+                bonus: 'g',
                 points: 2,
                 price: {
                     b: 5,
@@ -405,7 +405,7 @@ module.exports =
                 },
             },
             {
-                token: 'k',
+                bonus: 'k',
                 points: 2,
                 price: {
                     b: 1,
@@ -414,7 +414,7 @@ module.exports =
                 },
             },
             {
-                token: 'w',
+                bonus: 'w',
                 points: 1,
                 price: {
                     g: 3,
@@ -423,7 +423,7 @@ module.exports =
                 },
             },
             {
-                token: 'g',
+                bonus: 'g',
                 points: 1,
                 price: {
                     w: 3,
@@ -432,21 +432,21 @@ module.exports =
                 },
             },
             {
-                token: 'r',
+                bonus: 'r',
                 points: 2,
                 price: {
                     k: 5,
                 },
             },
             {
-                token: 'b',
+                bonus: 'b',
                 points: 3,
                 price: {
                     b: 6,
                 },
             },
             {
-                token: 'b',
+                bonus: 'b',
                 points: 2,
                 price: {
                     w: 2,
@@ -455,7 +455,7 @@ module.exports =
                 },
             },
             {
-                token: 'k',
+                bonus: 'k',
                 points: 1,
                 price: {
                     w: 3,
@@ -464,7 +464,7 @@ module.exports =
                 },
             },
             {
-                token: 'r',
+                bonus: 'r',
                 points: 2,
                 price: {
                     w: 1,
@@ -473,7 +473,7 @@ module.exports =
                 },
             },
             {
-                token: 'w',
+                bonus: 'w',
                 points: 2,
                 price: {
                     g: 1,
@@ -482,14 +482,14 @@ module.exports =
                 },
             },
             {
-                token: 'k',
+                bonus: 'k',
                 points: 2,
                 price: {
                     w: 5,
                 },
             },
             {
-                token: 'k',
+                bonus: 'k',
                 points: 1,
                 price: {
                     w: 3,
@@ -498,14 +498,14 @@ module.exports =
                 },
             },
             {
-                token: 'k',
+                bonus: 'k',
                 points: 3,
                 price: {
                     k: 6,
                 },
             },
             {
-                token: 'r',
+                bonus: 'r',
                 points: 1,
                 price: {
                     w: 2,
@@ -514,7 +514,7 @@ module.exports =
                 },
             },
             {
-                token: 'b',
+                bonus: 'b',
                 points: 1,
                 price: {
                     b: 2,
@@ -523,7 +523,7 @@ module.exports =
                 },
             },
             {
-                token: 'r',
+                bonus: 'r',
                 points: 2,
                 price: {
                     w: 3,
@@ -531,7 +531,7 @@ module.exports =
                 },
             },
             {
-                token: 'w',
+                bonus: 'w',
                 points: 2,
                 price: {
                     r: 5,
@@ -539,7 +539,7 @@ module.exports =
                 },
             },
             {
-                token: 'b',
+                bonus: 'b',
                 points: 1,
                 price: {
                     b: 2,
@@ -548,51 +548,51 @@ module.exports =
                 },
             },
             {
-                token: 'b',
+                bonus: 'b',
                 points: 2,
                 price: {
                     b: 5,
                 },
             },
             {
-                token: 'g',
+                bonus: 'g',
                 points: 2,
                 price: {
                     g: 5,
                 },
             },
             {
-                token: 'w',
+                bonus: 'w',
                 points: 3,
                 price: {
                     w: 6,
                 },
             },
             {
-                token: 'r',
+                bonus: 'r',
                 points: 3,
                 price: {
                     r: 6,
                 },
             },
             {
-                token: 'g',
+                bonus: 'g',
                 points: 3,
                 price: {
                     g: 6,
                 },
             },
             {
-                token: 'w',
+                bonus: 'w',
                 points: 2,
                 price: {
                     r: 5,
                 },
             },
         ],
-        deck2: [
+        level3: [
             {
-                token: 'r',
+                bonus: 'r',
                 points: 3,
                 price: {
                     w: 3,
@@ -602,7 +602,7 @@ module.exports =
                 },
             },
             {
-                token: 'k',
+                bonus: 'k',
                 points: 5,
                 price: {
                     r: 7,
@@ -610,14 +610,14 @@ module.exports =
                 },
             },
             {
-                token: 'r',
+                bonus: 'r',
                 points: 4,
                 price: {
                     g: 7,
                 },
             },
             {
-                token: 'r',
+                bonus: 'r',
                 points: 5,
                 price: {
                     g: 7,
@@ -625,14 +625,14 @@ module.exports =
                 },
             },
             {
-                token: 'g',
+                bonus: 'g',
                 points: 4,
                 price: {
                     b: 7,
                 },
             },
             {
-                token: 'g',
+                bonus: 'g',
                 points: 3,
                 price: {
                     w: 5,
@@ -642,7 +642,7 @@ module.exports =
                 },
             },
             {
-                token: 'w',
+                bonus: 'w',
                 points: 3,
                 price: {
                     b: 5,
@@ -652,7 +652,7 @@ module.exports =
                 },
             },
             {
-                token: 'b',
+                bonus: 'b',
                 points: 4,
                 price: {
                     w: 6,
@@ -661,7 +661,7 @@ module.exports =
                 },
             },
             {
-                token: 'w',
+                bonus: 'w',
                 points: 5,
                 price: {
                     w: 3,
@@ -669,7 +669,7 @@ module.exports =
                 },
             },
             {
-                token: 'k',
+                bonus: 'k',
                 points: 3,
                 price: {
                     w: 3,
@@ -679,7 +679,7 @@ module.exports =
                 },
             },
             {
-                token: 'w',
+                bonus: 'w',
                 points: 4,
                 price: {
                     w: 3,
@@ -688,7 +688,7 @@ module.exports =
                 },
             },
             {
-                token: 'g',
+                bonus: 'g',
                 points: 4,
                 price: {
                     w: 3,
@@ -697,14 +697,14 @@ module.exports =
                 },
             },
             {
-                token: 'w',
+                bonus: 'w',
                 points: 4,
                 price: {
                     k: 7,
                 },
             },
             {
-                token: 'r',
+                bonus: 'r',
                 points: 4,
                 price: {
                     b: 3,
@@ -713,7 +713,7 @@ module.exports =
                 },
             },
             {
-                token: 'b',
+                bonus: 'b',
                 points: 5,
                 price: {
                     w: 7,
@@ -721,7 +721,7 @@ module.exports =
                 },
             },
             {
-                token: 'b',
+                bonus: 'b',
                 points: 3,
                 price: {
                     w: 3,
@@ -731,7 +731,7 @@ module.exports =
                 },
             },
             {
-                token: 'k',
+                bonus: 'k',
                 points: 4,
                 price: {
                     g: 3,
@@ -740,21 +740,21 @@ module.exports =
                 },
             },
             {
-                token: 'b',
+                bonus: 'b',
                 points: 4,
                 price: {
                     w: 7,
                 },
             },
             {
-                token: 'k',
+                bonus: 'k',
                 points: 4,
                 price: {
                     r: 7,
                 },
             },
             {
-                token: 'g',
+                bonus: 'g',
                 points: 5,
                 price: {
                     b: 7,
@@ -763,7 +763,7 @@ module.exports =
             },
         ],
     },
-    artists: [
+    tiles: [
         {
             name: '红衣夫人',
             points: 3,

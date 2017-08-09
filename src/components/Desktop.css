@@ -1,8 +1,8 @@
-.Playground {
+.Desktop {
     margin: 8px;
 }
 
-.GroundDeck {
+.DeckPile {
     display: -webkit-flex;
     display: flex;
 }

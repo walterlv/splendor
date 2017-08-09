@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './Playground.css';
+import './Desktop.css';
 import Card from './Card';
 import SplendorGame from '../game/SplendorGame';
 
@@ -24,8 +24,8 @@ export default class Playground extends Component {
         }
 
         return (
-            <div className="Playground">
-                <div className="GroundDeck">
+            <div className="Desktop">
+                <div className="DeckPile">
                     {
                         this.state.opened.deck0.map((card, index) => (
                             <div onClick={exchangeTheCard} key={index.toString()}>
@@ -34,7 +34,7 @@ export default class Playground extends Component {
                         ))
                     }
                 </div>
-                <div className="GroundDeck">
+                <div className="DeckPile">
                     {
                         this.state.opened.deck1.map((card, index) => (
                             <div onClick={exchangeTheCard} key={index.toString()}>
@@ -43,7 +43,7 @@ export default class Playground extends Component {
                         ))
                     }
                 </div>
-                <div className="GroundDeck">
+                <div className="DeckPile">
                     {
                         this.state.opened.deck2.map((card, index) => (
                             <div onClick={exchangeTheCard} key={index.toString()}>
