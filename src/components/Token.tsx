@@ -1,6 +1,6 @@
 import * as React from 'react';
 import './Token.css';
-import { tokenToLocalizedName, tokenToColor } from '../data/converter';
+import { tokenToName, tokenToLocalizedName } from '../data/converter';
 
 export interface TokenProps {
     token: string;
@@ -12,12 +12,8 @@ export default class Token extends React.Component<TokenProps, {}> {
     }
 
     render() {
-        var color = tokenToColor(this.props.token);
-        var background = {
-            backgroundColor: color,
-        };
         return (
-            <div className="Token" style={background}>
+            <div className={`Token ${tokenToName(this.props.token)}`}>
                 <div>
                     <img
                         className="IconInToken"

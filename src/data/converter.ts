@@ -1,5 +1,3 @@
-import * as color from 'Color';
-
 function tokenToName(tag: string): string {
     switch (tag) {
     case 'w':
@@ -38,23 +36,4 @@ function tokenToLocalizedName(tag: string): string {
     }
 }
 
-function tokenToColor(tag: string): color {
-    switch (tag) {
-    case 'w':
-        return color('white');
-    case 'b':
-        return color('#082567');
-    case 'g':
-        return color('#50C878');
-    case 'r':
-        return color('#CC0080');
-    case 'k':
-        return color('black');
-    case 'y':
-        return color('yellow');
-    default:
-        throw tag;
-    }
-}
-
-export { tokenToName, tokenToLocalizedName, tokenToColor };
+export { tokenToName, tokenToLocalizedName };

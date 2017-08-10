@@ -3,11 +3,40 @@
     height: 100px;
     background-color: white;
     border-radius: 50px;
-    border-color: black;
     border-style: solid;
 }
 
 .IconInToken {
     height: 50px;
     margin-top: 20px;
+}
+
+.Diamond {
+    border-color: black;
+    background: white;
+}
+
+.Sapphire {
+    border-color: black;
+    background: #082567;
+}
+
+.Emerald {
+    border-color: black;
+    background: #50C878;
+}
+
+.Ruby {
+    border-color: black;
+    background: #9B111E;
+}
+
+.Onyx {
+    border-color: white;
+    background: #0F0F0F;
+}
+
+.Gold {
+    border-color: black;
+    background: #FFD700;
 }

@@ -18,37 +18,26 @@ export default class OpeningCards extends React.Component<OpeningCardsProps, {}>
     }
 
     render() {
-
-        function exchangeTheCard() {
-            return '';
-        }
-
         return (
             <div className="OpeningCards">
                 <div className="DeckPile">
                     {
                         this.props.opened1.map((card, index) => (
-                            <div onClick={exchangeTheCard} key={index.toString()}>
-                                <Card data={card} />
-                            </div>
+                            <Card data={card} />
                         ))
                     }
                 </div>
                 <div className="DeckPile">
                     {
                         this.props.opened2.map((card, index) => (
-                            <div onClick={exchangeTheCard} key={index.toString()}>
-                                <Card data={card} />
-                            </div>
+                            <Card data={card} />
                         ))
                     }
                 </div>
                 <div className="DeckPile">
                     {
                         this.props.opened3.map((card, index) => (
-                            <div onClick={exchangeTheCard} key={index.toString()}>
-                                <Card data={card} />
-                            </div>
+                            <Card data={card} />
                         ))
                     }
                 </div>
