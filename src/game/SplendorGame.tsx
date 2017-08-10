@@ -18,11 +18,11 @@ export default class SplendorGame {
 
     flop(level: number, count: number = 1): Deck[] {
         switch (level) {
-            case 1:
+            case 0:
                 return this.decks.level1.splice(0, count);
-            case 2:
+            case 1:
                 return this.decks.level2.splice(0, count);
-            case 3:
+            case 2:
                 return this.decks.level3.splice(0, count);
             default:
                 return [];
