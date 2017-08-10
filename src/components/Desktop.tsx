@@ -1,6 +1,6 @@
 import * as React from 'react';
 import './Desktop.css';
-import Card from './Card';
+import OpeningCards from './OpeningCards';
 import SplendorGame from '../game/SplendorGame';
 import { Deck } from '../data/model';
 
@@ -24,40 +24,13 @@ export default class Desktop extends React.Component<{}, DesktopState> {
     }
 
     render() {
-
-        function exchangeTheCard() {
-            return '';
-        }
-
         return (
             <div className="Desktop">
-                <div className="DeckPile">
-                    {
-                        this.state.opened1.map((card, index) => (
-                            <div onClick={exchangeTheCard} key={index.toString()}>
-                                <Card data={card} />
-                            </div>
-                        ))
-                    }
-                </div>
-                <div className="DeckPile">
-                    {
-                        this.state.opened2.map((card, index) => (
-                            <div onClick={exchangeTheCard} key={index.toString()}>
-                                <Card data={card} />
-                            </div>
-                        ))
-                    }
-                </div>
-                <div className="DeckPile">
-                    {
-                        this.state.opened3.map((card, index) => (
-                            <div onClick={exchangeTheCard} key={index.toString()}>
-                                <Card data={card} />
-                            </div>
-                        ))
-                    }
-                </div>
+                <OpeningCards
+                    opened1={this.state.opened1}
+                    opened2={this.state.opened2}
+                    opened3={this.state.opened3}
+                />
             </div>
         );
     }
