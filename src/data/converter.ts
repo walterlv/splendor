@@ -1,4 +1,4 @@
-function tokenToName(tag: string) {
+function tokenToName(tag: string): string {
     switch (tag) {
     case 'w':
         return 'Diamond';
@@ -17,7 +17,7 @@ function tokenToName(tag: string) {
     }
 }
 
-function tokenToLocalizedName(tag: string) {
+function tokenToLocalizedName(tag: string): string {
     switch (tag) {
     case 'w':
         return '钻石';

@@ -2,8 +2,6 @@ import * as React from 'react';
 import './App.css';
 import Playground from './components/Desktop';
 
-const logo = require('./logo.svg');
-
 class App extends React.Component<{}, {}> {
   render() {
     return (
