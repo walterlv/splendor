@@ -1,8 +1,4 @@
 .Desktop {
-    margin: 8px;
-}
-
-.DeckPile {
     display: -webkit-flex;
     display: flex;
 }

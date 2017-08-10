@@ -1,5 +1,5 @@
 import * as React from 'react';
-import './Desktop.css';
+import './OpeningCards.css';
 import Card from './Card';
 import SplendorGame from '../game/SplendorGame';
 import { Deck } from '../data/model';
