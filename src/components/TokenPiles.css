@@ -1,4 +1,15 @@
 .TokenPiles {
-    width: 100px;
-    background-color: red;
+    margin: 8px;
+}
+
+.APileOfToken {
+    display: -webkit-flex;
+    display: flex;
+    margin-left: 70px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.TokenInPile {
+    margin-left: -90px;
 }

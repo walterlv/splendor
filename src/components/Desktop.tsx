@@ -35,7 +35,7 @@ export default class Desktop extends React.Component<{}, DesktopState> {
                     />
                 </div>
                 <div className="TokenPiles">
-                    <TokenPiles />
+                    <TokenPiles numberOfAPile={7} />
                 </div>
             </div>
         );
