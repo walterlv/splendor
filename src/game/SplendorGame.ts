@@ -1,6 +1,6 @@
 import GameData, { LeveledDecks } from '../data/data';
 import { Deck, Tile } from '../data/model';
-// var shuffle = require('shuffle-array');
+import * as shuffle from 'shuffle-array';
 
 export default class SplendorGame {
     decks: LeveledDecks;
@@ -9,9 +9,9 @@ export default class SplendorGame {
     constructor() {
         const gameData = new GameData();
         this.decks = {
-            level1: gameData.decks.level1, // shuffle(gameData.decks.level1),
-            level2: gameData.decks.level2, // shuffle(gameData.decks.level2),
-            level3: gameData.decks.level3, // shuffle(gameData.decks.level3),
+            level1: shuffle(gameData.decks.level1),
+            level2: shuffle(gameData.decks.level2),
+            level3: shuffle(gameData.decks.level3),
         };
         this.tiles = gameData.tiles;
     }
