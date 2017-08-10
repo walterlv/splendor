@@ -7,6 +7,10 @@ export interface CardProps {
     data: Deck;
 }
 
+function random(min: number, max: number) {
+    return Math.floor(Math.random() * (max - min + 1) + min);
+}
+
 export default class Card extends React.Component<CardProps, {}> {
     points: number;
     bonus: string;
@@ -39,8 +43,11 @@ export default class Card extends React.Component<CardProps, {}> {
     }
 
     render() {
+        var backgroundImage = {
+            backgroundImage : 'url(/resources/deck-2-' + random(0, 7) + '.png)',
+        };
         return (
-            <div className="Card">
+            <div className="Card" style={backgroundImage}>
                 <div className="CardPointsBonusContainer">
                     { this.points > 0 &&
                         <div className="CardPointsContainer">
