@@ -1,6 +1,6 @@
 import * as React from 'react';
 import './App.css';
-import Playground from './components/Desktop';
+import Desktop from './components/Desktop';
 
 class App extends React.Component<{}, {}> {
   render() {
@@ -9,7 +9,7 @@ class App extends React.Component<{}, {}> {
         <div className="App-header">
           <h2>Splendor</h2>
         </div>
-        <Playground />
+        <Desktop />
       </div>
     );
   }
