@@ -4,13 +4,13 @@ import Card from './Card';
 import SplendorGame from '../game/SplendorGame';
 import { Deck } from '../data/model';
 
-export interface PlaygroundState {
+export interface DesktopState {
     opened1: Deck[];
     opened2: Deck[];
     opened3: Deck[];
 }
 
-export default class Playground extends React.Component<{}, PlaygroundState> {
+export default class Desktop extends React.Component<{}, DesktopState> {
     game: SplendorGame;
 
     constructor() {
