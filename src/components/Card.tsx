@@ -5,6 +5,22 @@ import { tokenToLocalizedName } from '../data/converter';
 
 export interface CardProps {
     data: Deck;
+    /**
+     * 此卡片的等级。
+     */
+    level: number;
+    /**
+     * 此卡片在 level 指定等级下的序号。
+     * 0 = 未翻开
+     * 1-4 = 已翻开未兑换
+     * 11-15 = 在玩家手中未兑换
+     * 21-25 = 在玩家手中已兑换
+     */
+    index: number;
+    /**
+     * 当选中此卡片的时候发生。
+     */
+    onSelected?: () => void;
 }
 
 function random(min: number, max: number) {
@@ -47,7 +63,7 @@ export default class Card extends React.Component<CardProps, {}> {
             backgroundImage : 'url(/resources/deck-2-' + random(0, 7) + '.png)',
         };
         return (
-            <div className="Card" style={backgroundImage}>
+            <div className="Card" style={backgroundImage} onClick={this.props.onSelected}>
                 <div className="CardPointsBonusContainer">
                     { this.points > 0 &&
                         <div className="CardPointsContainer">
