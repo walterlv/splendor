@@ -6,13 +6,13 @@ export interface Price {
     k: number;
 }
 
-export interface Deck {
+export interface Card {
     bonus: string;
     points: number;
     price: Price;
 }
 
-export interface Tile {
+export interface Noble {
     name: string;
     points: number;
     price: Price;

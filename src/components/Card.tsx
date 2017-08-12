@@ -1,10 +1,10 @@
 import * as React from 'react';
 import './Card.css';
-import { Deck } from '../data/model';
+import * as Model from '../data/model';
 import { tokenToLocalizedName } from '../data/converter';
 
 export interface CardProps {
-    data: Deck;
+    data: Model.Card;
     /**
      * 此卡片的等级。
      */

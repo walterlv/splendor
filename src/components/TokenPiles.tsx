@@ -26,7 +26,7 @@ export default class TokenPiles extends React.Component<TokenPilesProps, {}> {
                     {
                         forCount(5).map(i => (
                             <div className="TokenInPile">
-                                <Token token="y" />
+                                <Token token="y" key={`y,${i.toString()}`} />
                             </div>
                         ))
                     }
@@ -35,7 +35,7 @@ export default class TokenPiles extends React.Component<TokenPilesProps, {}> {
                     {
                         forCount(this.props.numberOfAPile).map(i => (
                             <div className="TokenInPile">
-                                <Token token="k" />
+                                <Token token="k" key={`k,${i.toString()}`} />
                             </div>
                         ))
                     }
@@ -44,7 +44,7 @@ export default class TokenPiles extends React.Component<TokenPilesProps, {}> {
                     {
                         forCount(this.props.numberOfAPile).map(i => (
                             <div className="TokenInPile">
-                                <Token token="r" />
+                                <Token token="r" key={`r,${i.toString()}`} />
                             </div>
                         ))
                     }
@@ -53,7 +53,7 @@ export default class TokenPiles extends React.Component<TokenPilesProps, {}> {
                     {
                         forCount(this.props.numberOfAPile).map(i => (
                             <div className="TokenInPile">
-                                <Token token="g" />
+                                <Token token="g" key={`g,${i.toString()}`} />
                             </div>
                         ))
                     }
@@ -62,7 +62,7 @@ export default class TokenPiles extends React.Component<TokenPilesProps, {}> {
                     {
                         forCount(this.props.numberOfAPile).map(i => (
                             <div className="TokenInPile">
-                                <Token token="b" />
+                                <Token token="b" key={`b,${i.toString()}`} />
                             </div>
                         ))
                     }
@@ -71,7 +71,7 @@ export default class TokenPiles extends React.Component<TokenPilesProps, {}> {
                     {
                         forCount(this.props.numberOfAPile).map(i => (
                             <div className="TokenInPile">
-                                <Token token="w" />
+                                <Token token="w" key={`w,${i.toString()}`} />
                             </div>
                         ))
                     }

@@ -1,14 +1,14 @@
 import * as React from 'react';
 import './Desktop.css';
-import { Deck } from '../data/model';
+import * as Model from '../data/model';
 import SplendorGame from '../game/SplendorGame';
 import OpeningCards from './OpeningCards';
 import TokenPiles from './TokenPiles';
 
 export interface DesktopState {
-    opened1: Deck[];
-    opened2: Deck[];
-    opened3: Deck[];
+    opened1: Model.Card[];
+    opened2: Model.Card[];
+    opened3: Model.Card[];
 }
 
 export default class Desktop extends React.Component<{}, DesktopState> {

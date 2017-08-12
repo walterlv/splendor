@@ -1,22 +1,22 @@
-import GameData, { LeveledDecks } from '../data/data';
-import { Deck, Tile } from '../data/model';
+import GameData, { LeveledCards } from '../data/data';
+import { Card, Noble } from '../data/model';
 import * as shuffle from 'shuffle-array';
 
 export default class SplendorGame {
-    decks: LeveledDecks;
-    tiles: Tile[];
+    decks: LeveledCards;
+    tiles: Noble[];
 
     constructor() {
         const gameData = new GameData();
         this.decks = {
-            level1: shuffle(gameData.decks.level1),
-            level2: shuffle(gameData.decks.level2),
-            level3: shuffle(gameData.decks.level3),
+            level1: shuffle(gameData.cards.level1),
+            level2: shuffle(gameData.cards.level2),
+            level3: shuffle(gameData.cards.level3),
         };
         this.tiles = gameData.tiles;
     }
 
-    flop(level: number, count: number = 1): Deck[] {
+    flop(level: number, count: number = 1): Card[] {
         switch (level) {
             case 0:
                 return this.decks.level1.splice(0, count);

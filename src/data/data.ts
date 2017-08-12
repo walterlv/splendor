@@ -1,14 +1,14 @@
-import { Deck, Tile } from './model';
+import { Card, Noble } from './model';
 
-export interface LeveledDecks {
-    level1: Deck[];
-    level2: Deck[];
-    level3: Deck[];
+export interface LeveledCards {
+    level1: Card[];
+    level2: Card[];
+    level3: Card[];
 }
 
 export default class GameData {
-    decks: LeveledDecks;
-    tiles: Tile[];
+    cards: LeveledCards;
+    tiles: Noble[];
 
     constructor() {
         var level1 = [
@@ -1130,7 +1130,7 @@ export default class GameData {
                 },
             },
         ];
-        this.decks = {
+        this.cards = {
             level1: level1,
             level2: level2,
             level3: level3,
