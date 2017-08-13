@@ -4,7 +4,7 @@ import * as shuffle from 'shuffle-array';
 
 export default class SplendorGame {
     decks: LeveledCards;
-    tiles: Noble[];
+    nobles: Noble[];
 
     constructor() {
         const gameData = new GameData();
@@ -13,7 +13,7 @@ export default class SplendorGame {
             level2: shuffle(gameData.cards.level2),
             level3: shuffle(gameData.cards.level3),
         };
-        this.tiles = gameData.tiles;
+        this.nobles = gameData.nobles;
     }
 
     flop(level: number, count: number = 1): Card[] {

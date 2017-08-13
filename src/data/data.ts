@@ -8,7 +8,7 @@ export interface LeveledCards {
 
 export default class GameData {
     cards: LeveledCards;
-    tiles: Noble[];
+    nobles: Noble[];
 
     constructor() {
         var level1 = [
@@ -1007,7 +1007,7 @@ export default class GameData {
                 },
             },
         ];
-        var tiles = [
+        var nobles = [
             {
                 name: '红衣夫人',
                 points: 3,
@@ -1135,6 +1135,6 @@ export default class GameData {
             level2: level2,
             level3: level3,
         };
-        this.tiles = tiles;
+        this.nobles = nobles;
     }
 }
