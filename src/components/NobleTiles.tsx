@@ -17,7 +17,7 @@ export default class NobleTiles extends React.Component<NobleTilesProps, {}> {
             <div className="NobleTiles">
                 {
                     this.props.opened.map(item => (
-                        <Noble />
+                        <Noble data={item} />
                     ))
                 }
             </div>
