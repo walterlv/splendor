@@ -1,19 +1,19 @@
 import * as React from 'react';
-import './OpeningCards.css';
+import './CardDecks.css';
 import Card from './Card';
 import SplendorGame from '../game/SplendorGame';
 import * as Model from '../data/model';
 
-export interface OpeningCardsProps {
+export interface CardDecksProps {
     opened1: Model.Card[];
     opened2: Model.Card[];
     opened3: Model.Card[];
 }
 
-export default class OpeningCards extends React.Component<OpeningCardsProps, {}> {
+export default class OpeningCards extends React.Component<CardDecksProps, {}> {
     game: SplendorGame;
 
-    constructor(props: OpeningCardsProps) {
+    constructor(props: CardDecksProps) {
         super(props);
     }
 
